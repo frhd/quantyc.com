@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* inter-latin-wght-normal */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -19,15 +29,15 @@
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
+    --sh-class: #2d5e9d;
+    --sh-identifier: #354150;
+    --sh-keyword: #e02518;
+    --sh-string: #007f7a;
   }
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 
@@ -50,11 +60,11 @@ html {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all decoration-neutral-400 underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+  @apply text-neutral-300;
   content: '#';
 }
 
@@ -63,7 +73,7 @@ html {
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply bg-neutral-50 rounded-lg overflow-x-auto border border-neutral-200 py-2 px-3 text-sm;
 }
 
 .prose code {
@@ -86,7 +96,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-neutral-800;
 }
 
 .prose h1 {
@@ -149,4 +159,11 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+body, #__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter Variable', sans-serif;
 }
