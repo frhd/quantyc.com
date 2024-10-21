@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -48,6 +49,10 @@ export default function RootLayout({
         'text-black bg-white light:text-white dark:bg-white'
       )}
     >
+           <Head>
+        {/* Link to Noto Mono font */}
+        <link href="https://fonts.cdnfonts.com/css/noto-mono" rel="stylesheet" />
+      </Head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           {children}
