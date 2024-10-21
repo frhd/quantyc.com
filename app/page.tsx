@@ -18,7 +18,7 @@ export default function Page() {
   From <strong>scalable web applications</strong> to complex enterprise systems, we bring the most challenging technical projects to life using technologies like Kubernetes, Spring Boot, and modern data and object storage systems.
   </p>
   <p className="mb-4">
-  Projects typically take 3–12 months. <br />
+  Projects typically take 3–18 months. <br />
   Start at €7,000/month for full-stack development.
   </p>
   <p className="mb-4">
