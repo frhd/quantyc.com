@@ -2,7 +2,7 @@ import { GeistMono } from 'geist/font/mono';
 
 export default function ProjectsPage() {
   return (
-    <section className={`py-[8rem] max-w-[420px] pl-2 ${GeistMono.className}`}>
+    <section className={`py-[2rem] md:py-[8rem] max-w-[420px] pl-2 ${GeistMono.className}  transition-all duration-300 ease-in-out`}>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         <a href="/" className="hover:underline">🟥</a>
       </h1>
