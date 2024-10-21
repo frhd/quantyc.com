@@ -22,10 +22,10 @@ export default function Page() {
   Start at €7,000/month for full-stack development.
   </p>
   <p className="mb-4">
-  **Explore our expertise** and see how we can elevate your digital capabilities.
+  <a href="/projects" className="text-red-600 hover:underline">Explore our expertise</a> and see how we can take you to the next level.
   </p>
   <p className="mb-4">
-  **Get started with quantyc** or **book a call**.
+  <a href="https://cal.com/quantyc" className="text-red-600 hover:underline" target="_blank" rel="noopener noreferrer">Book a call</a> to get started with us.
   </p>
 </section>
 )}

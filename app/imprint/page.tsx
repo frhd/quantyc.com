@@ -1,3 +1,5 @@
+import { GeistSans } from 'geist/font/sans';
+
 export const metadata = {
   title: 'Impressum',
   description: 'Rechtliche Informationen über die Website.',
@@ -5,7 +7,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="py-[8rem] max-w-[420px] pl-2">
+    <section className={`py-[8rem] max-w-[420px] pl-2 ${GeistSans.className}`}>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         <a href="/" className="hover:underline">🟥</a>
       </h1>
