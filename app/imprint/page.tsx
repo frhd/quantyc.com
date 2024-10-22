@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section className={`py-[2rem] md:py-[3rem] max-w-[420px] pl-2 ${GeistSans.className} transition-all duration-300 ease-in-out`}>
-      <h1 className="mb-8 text-xl font-semibold tracking-tighter">
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         <a href="/" className="hover:underline">🟥</a>
       </h1>
       <h1 className="font-semibold text-xl mb-8 tracking-tighter">Impressum</h1>
