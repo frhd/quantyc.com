@@ -12,7 +12,8 @@ export default function Page() {
         <a href="/" className="hover:underline">🟥</a>
       </h1>
       <h1 className="font-semibold text-xl mb-8 tracking-tighter">Impressum</h1>
-      <p className="italic text-gray-500">/* This site does not use cookies.  <br /> Diese Seite verwendet keine Cookies. */</p>
+      <p className="italic text-gray-500">/* This website does not use cookies.
+        <br /> Diese Website verwendet keine Cookies. */</p>
       <br />
       <div className="mb-4">
         <h2 className="font-bold text-l">Angaben gemäß § 5 TMG</h2>
