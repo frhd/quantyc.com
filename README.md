@@ -25,8 +25,9 @@ The easiest way to use this repo is to clone it and run it locally:
 git clonegit@github.com:frhd/quantyc.com.git
 ```
 
-Then, run Next.js in development mode:
+Then, install dependencies and run Next.js in development mode:
 
 ```bash
+pnpm i
 pnpm dev
 ```
