@@ -28,10 +28,10 @@ export default function ProjectsPage() {
           <strong>Seating Plan Management Tool</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-blue-500/20 text-blue-700">Next.js</Tag>
-          <Tag color="bg-cyan-500/20 text-cyan-700">TypeScript</Tag>
-          <Tag color="bg-green-500/20 text-green-700">PostgreSQL</Tag>
-          <Tag color="bg-purple-500/20 text-purple-700">Vercel</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">Next.js</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-800">TypeScript</Tag>
+          <Tag color="bg-green-500/20 text-green-800">PostgreSQL</Tag>
+          <Tag color="bg-purple-500/20 text-purple-800">Vercel</Tag>
         </div>
         <p>
           A web application for creating and managing seating plans for classrooms, events, and venues. Features drag-and-drop interface, export options, and collaborative editing.
@@ -40,17 +40,17 @@ export default function ProjectsPage() {
 
       {/* Project 1 */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-2 flex items-center flex-wrap gap-y-1">
+        <h2 className="text-xl font-bold mb-2">
           <span>Central Citizen Mailbox</span><NDABadge />
         </h2>
         <p className="mb-2">
           <strong>Java-based REST API Development</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-orange-500/20 text-orange-700">Java</Tag>
-          <Tag color="bg-blue-500/20 text-blue-700">Kubernetes</Tag>
-          <Tag color="bg-cyan-500/20 text-cyan-700">Docker</Tag>
-          <Tag color="bg-yellow-500/20 text-yellow-700">SQL</Tag>
+          <Tag color="bg-orange-500/20 text-orange-800">Java</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">Kubernetes</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-800">Docker</Tag>
+          <Tag color="bg-yellow-500/20 text-yellow-800">SQL</Tag>
         </div>
         <p>
           Built a robust API integrating SQL and object storage, CI deployments, and certificate management. DevOps with Kubernetes and Docker for containerized environments.
@@ -59,17 +59,17 @@ export default function ProjectsPage() {
 
       {/* Project 2 */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-2 flex items-center flex-wrap gap-y-1">
+        <h2 className="text-xl font-bold mb-2">
           <span>Encrypted Communication Suite</span><NDABadge />
         </h2>
         <p className="mb-2">
           <strong>End-to-end Encrypted Communication System</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-cyan-500/20 text-cyan-700">React Native</Tag>
-          <Tag color="bg-purple-500/20 text-purple-700">Kotlin</Tag>
-          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
-          <Tag color="bg-blue-500/20 text-blue-700">Kubernetes</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-800">React Native</Tag>
+          <Tag color="bg-purple-500/20 text-purple-800">Kotlin</Tag>
+          <Tag color="bg-green-500/20 text-green-800">MongoDB</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">Kubernetes</Tag>
         </div>
         <p>
           Designed and developed iOS and Android apps with React-Native. Backend development using Kotlin and Ktor, with MongoDB and Kubernetes for scalability.
@@ -78,17 +78,17 @@ export default function ProjectsPage() {
 
       {/* Project 3 */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-2 flex items-center flex-wrap gap-y-1">
+        <h2 className="text-xl font-bold mb-2">
           <span>E-commerce Platform Microservices</span><NDABadge />
         </h2>
         <p className="mb-2">
           <strong>Microservices for E-commerce Platform</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-pink-500/20 text-pink-700">RabbitMQ</Tag>
-          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
-          <Tag color="bg-orange-500/20 text-orange-700">Microservices</Tag>
-          <Tag color="bg-blue-500/20 text-blue-700">REST API</Tag>
+          <Tag color="bg-pink-500/20 text-pink-800">RabbitMQ</Tag>
+          <Tag color="bg-green-500/20 text-green-800">MongoDB</Tag>
+          <Tag color="bg-orange-500/20 text-orange-800">Microservices</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">REST API</Tag>
         </div>
         <p>
           Developed and enhanced API interfaces between microservices, implementing RabbitMQ message brokering with MongoDB for data storage.
@@ -97,17 +97,17 @@ export default function ProjectsPage() {
 
       {/* Project 4 */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-2 flex items-center flex-wrap gap-y-1">
+        <h2 className="text-xl font-bold mb-2">
           <span>Video Communication Web App</span><NDABadge />
         </h2>
         <p className="mb-2">
           <strong>Web and Mobile Video Communication App</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-cyan-500/20 text-cyan-700">React</Tag>
-          <Tag color="bg-green-500/20 text-green-700">Node.js</Tag>
-          <Tag color="bg-yellow-500/20 text-yellow-700">WebSocket</Tag>
-          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-800">React</Tag>
+          <Tag color="bg-green-500/20 text-green-800">Node.js</Tag>
+          <Tag color="bg-yellow-500/20 text-yellow-800">WebSocket</Tag>
+          <Tag color="bg-green-500/20 text-green-800">MongoDB</Tag>
         </div>
         <p>
           Developed video communication platform with React and Node.js, integrating MongoDB and WebSocket for real-time communication.
@@ -116,17 +116,17 @@ export default function ProjectsPage() {
 
       {/* Project 5 */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-2 flex items-center flex-wrap gap-y-1">
+        <h2 className="text-xl font-bold mb-2">
           <span>Cryptographic Certificate Platform</span><NDABadge />
         </h2>
         <p className="mb-2">
           <strong>Platform for Managing Cryptographic Certificates</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-green-500/20 text-green-700">Spring Boot</Tag>
-          <Tag color="bg-red-500/20 text-red-700">Keycloak</Tag>
-          <Tag color="bg-cyan-500/20 text-cyan-700">Docker</Tag>
-          <Tag color="bg-purple-500/20 text-purple-700">PKI</Tag>
+          <Tag color="bg-green-500/20 text-green-800">Spring Boot</Tag>
+          <Tag color="bg-red-500/20 text-red-800">Keycloak</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-800">Docker</Tag>
+          <Tag color="bg-purple-500/20 text-purple-800">PKI</Tag>
         </div>
         <p>
           Designed and implemented a self-service platform for cryptographic certificates with Spring Boot, Keycloak for authentication, and Docker for deployment.
@@ -135,17 +135,17 @@ export default function ProjectsPage() {
 
       {/* Project 6 */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-2 flex items-center flex-wrap gap-y-1">
+        <h2 className="text-xl font-bold mb-2">
           <span>EDI Platform</span><NDABadge />
         </h2>
         <p className="mb-2">
           <strong>Electronic Data Interchange Platform</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-orange-500/20 text-orange-700">Java</Tag>
-          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
-          <Tag color="bg-red-500/20 text-red-700">Angular</Tag>
-          <Tag color="bg-blue-500/20 text-blue-700">EDI</Tag>
+          <Tag color="bg-orange-500/20 text-orange-800">Java</Tag>
+          <Tag color="bg-green-500/20 text-green-800">MongoDB</Tag>
+          <Tag color="bg-red-500/20 text-red-800">Angular</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">EDI</Tag>
         </div>
         <p>
           Developed a web-based platform for exchanging business documents, utilizing Java, MongoDB, and Angular. Managed build, deployment, and release cycles.
