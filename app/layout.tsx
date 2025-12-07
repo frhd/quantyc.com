@@ -41,7 +41,7 @@ const cx = (...classes) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-white text-black antialiased max-w-3xl mx-auto p-4 md:p-6 lg:p-8">
         <main className="min-h-screen flex flex-col py-8 pt-16 md:py-12 md:pt-24 lg:py-16 lg:pt-32">
           {children}
