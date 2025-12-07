@@ -1,5 +1,3 @@
-import { GeistMono } from 'geist/font/mono';
-
 const Tag = ({ children, color }: { children: React.ReactNode; color: string }) => (
   <span className={`inline-block px-2 py-0.5 text-xs rounded-full mr-1 mb-1 ${color}`}>
     {children}
@@ -14,7 +12,7 @@ const NDABadge = () => (
 
 export default function ProjectsPage() {
   return (
-    <section className={`max-w-[420px] ${GeistMono.className}  transition-all duration-300 ease-in-out`}>
+    <section className="max-w-[420px] transition-all duration-300 ease-in-out">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         <a href="/" className="hover:underline">🟥</a>
       </h1>
@@ -30,10 +28,10 @@ export default function ProjectsPage() {
           <strong>Seating Plan Management Tool</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-blue-500/20 text-blue-400">Next.js</Tag>
-          <Tag color="bg-cyan-500/20 text-cyan-400">TypeScript</Tag>
-          <Tag color="bg-green-500/20 text-green-400">PostgreSQL</Tag>
-          <Tag color="bg-purple-500/20 text-purple-400">Vercel</Tag>
+          <Tag color="bg-blue-500/20 text-blue-700">Next.js</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-700">TypeScript</Tag>
+          <Tag color="bg-green-500/20 text-green-700">PostgreSQL</Tag>
+          <Tag color="bg-purple-500/20 text-purple-700">Vercel</Tag>
         </div>
         <p>
           A web application for creating and managing seating plans for classrooms, events, and venues. Features drag-and-drop interface, export options, and collaborative editing.
@@ -49,10 +47,10 @@ export default function ProjectsPage() {
           <strong>Java-based REST API Development</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-orange-500/20 text-orange-400">Java</Tag>
-          <Tag color="bg-blue-500/20 text-blue-400">Kubernetes</Tag>
-          <Tag color="bg-cyan-500/20 text-cyan-400">Docker</Tag>
-          <Tag color="bg-yellow-500/20 text-yellow-400">SQL</Tag>
+          <Tag color="bg-orange-500/20 text-orange-700">Java</Tag>
+          <Tag color="bg-blue-500/20 text-blue-700">Kubernetes</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-700">Docker</Tag>
+          <Tag color="bg-yellow-500/20 text-yellow-700">SQL</Tag>
         </div>
         <p>
           Built a robust API integrating SQL and object storage, CI deployments, and certificate management. DevOps with Kubernetes and Docker for containerized environments.
@@ -68,10 +66,10 @@ export default function ProjectsPage() {
           <strong>End-to-end Encrypted Communication System</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-cyan-500/20 text-cyan-400">React Native</Tag>
-          <Tag color="bg-purple-500/20 text-purple-400">Kotlin</Tag>
-          <Tag color="bg-green-500/20 text-green-400">MongoDB</Tag>
-          <Tag color="bg-blue-500/20 text-blue-400">Kubernetes</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-700">React Native</Tag>
+          <Tag color="bg-purple-500/20 text-purple-700">Kotlin</Tag>
+          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
+          <Tag color="bg-blue-500/20 text-blue-700">Kubernetes</Tag>
         </div>
         <p>
           Designed and developed iOS and Android apps with React-Native. Backend development using Kotlin and Ktor, with MongoDB and Kubernetes for scalability.
@@ -87,10 +85,10 @@ export default function ProjectsPage() {
           <strong>Microservices for E-commerce Platform</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-pink-500/20 text-pink-400">RabbitMQ</Tag>
-          <Tag color="bg-green-500/20 text-green-400">MongoDB</Tag>
-          <Tag color="bg-orange-500/20 text-orange-400">Microservices</Tag>
-          <Tag color="bg-blue-500/20 text-blue-400">REST API</Tag>
+          <Tag color="bg-pink-500/20 text-pink-700">RabbitMQ</Tag>
+          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
+          <Tag color="bg-orange-500/20 text-orange-700">Microservices</Tag>
+          <Tag color="bg-blue-500/20 text-blue-700">REST API</Tag>
         </div>
         <p>
           Developed and enhanced API interfaces between microservices, implementing RabbitMQ message brokering with MongoDB for data storage.
@@ -106,10 +104,10 @@ export default function ProjectsPage() {
           <strong>Web and Mobile Video Communication App</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-cyan-500/20 text-cyan-400">React</Tag>
-          <Tag color="bg-green-500/20 text-green-400">Node.js</Tag>
-          <Tag color="bg-yellow-500/20 text-yellow-400">WebSocket</Tag>
-          <Tag color="bg-green-500/20 text-green-400">MongoDB</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-700">React</Tag>
+          <Tag color="bg-green-500/20 text-green-700">Node.js</Tag>
+          <Tag color="bg-yellow-500/20 text-yellow-700">WebSocket</Tag>
+          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
         </div>
         <p>
           Developed video communication platform with React and Node.js, integrating MongoDB and WebSocket for real-time communication.
@@ -125,10 +123,10 @@ export default function ProjectsPage() {
           <strong>Platform for Managing Cryptographic Certificates</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-green-500/20 text-green-400">Spring Boot</Tag>
-          <Tag color="bg-red-500/20 text-red-400">Keycloak</Tag>
-          <Tag color="bg-cyan-500/20 text-cyan-400">Docker</Tag>
-          <Tag color="bg-purple-500/20 text-purple-400">PKI</Tag>
+          <Tag color="bg-green-500/20 text-green-700">Spring Boot</Tag>
+          <Tag color="bg-red-500/20 text-red-700">Keycloak</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-700">Docker</Tag>
+          <Tag color="bg-purple-500/20 text-purple-700">PKI</Tag>
         </div>
         <p>
           Designed and implemented a self-service platform for cryptographic certificates with Spring Boot, Keycloak for authentication, and Docker for deployment.
@@ -144,10 +142,10 @@ export default function ProjectsPage() {
           <strong>Electronic Data Interchange Platform</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-orange-500/20 text-orange-400">Java</Tag>
-          <Tag color="bg-green-500/20 text-green-400">MongoDB</Tag>
-          <Tag color="bg-red-500/20 text-red-400">Angular</Tag>
-          <Tag color="bg-blue-500/20 text-blue-400">EDI</Tag>
+          <Tag color="bg-orange-500/20 text-orange-700">Java</Tag>
+          <Tag color="bg-green-500/20 text-green-700">MongoDB</Tag>
+          <Tag color="bg-red-500/20 text-red-700">Angular</Tag>
+          <Tag color="bg-blue-500/20 text-blue-700">EDI</Tag>
         </div>
         <p>
           Developed a web-based platform for exchanging business documents, utilizing Java, MongoDB, and Angular. Managed build, deployment, and release cycles.

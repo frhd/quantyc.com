@@ -1,8 +1,6 @@
-import { GeistMono } from 'geist/font/mono';
-
 export default function Page() {
   return (
-    <section className={`max-w-[400px] ${GeistMono.className} transition-all duration-300 ease-in-out`}>
+    <section className="max-w-[400px] transition-all duration-300 ease-in-out">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         <a href="/" className="hover:underline">🟥</a>
       </h1>
