@@ -16,7 +16,7 @@
     "geist": "1.5.1",
     "next": "16.0.7",
     "next-mdx-remote": "^5.0.0",
-    "react": "^19.2.1",
+    "react": "^19.2.3",
     "react-dom": "^19.2.1",
     "sugar-high": "^0.9.5",
     "typescript": "5.9.3"
