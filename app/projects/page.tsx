@@ -28,10 +28,10 @@ export default function ProjectsPage() {
           <strong>Seating Plan Management Tool</strong>
         </p>
         <div className="mb-2">
-          <Tag color="bg-blue-500/20 text-blue-800">Next.js</Tag>
+          <Tag color="bg-green-500/20 text-green-800">Vue.js</Tag>
           <Tag color="bg-cyan-500/20 text-cyan-800">TypeScript</Tag>
-          <Tag color="bg-green-500/20 text-green-800">PostgreSQL</Tag>
-          <Tag color="bg-purple-500/20 text-purple-800">Vercel</Tag>
+          <Tag color="bg-sky-500/20 text-sky-800">Tailwind</Tag>
+          <Tag color="bg-purple-500/20 text-purple-800">Vite</Tag>
         </div>
         <p>
           A web application for creating and managing seating plans for classrooms, events, and venues. Features drag-and-drop interface, export options, and collaborative editing.
