@@ -19,7 +19,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "sugar-high": "^0.9.5",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.0",
