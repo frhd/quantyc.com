@@ -14,7 +14,7 @@ export default function Page() {
         From scalable web applications to complex enterprise systems, we tackle the most demanding technical challenges, using cutting-edge technologies like Kubernetes, Spring Boot, and modern data and object storage solutions.
       </p>
       <p className="mb-4">
-        <strong><a href="/projects" className="text-red-600 hover:underline">Our projects</a></strong> typically span 3 to 18 months and start at €7,000/month for full-stack development services.
+        <strong><a href="/projects" className="text-red-600 hover:underline">Our projects</a></strong> typically span 3 to 18 months, and every engagement is scoped to fit your goals.
       </p>
       <p className="mb-4">
         <strong>Let’s take your business to the next level.</strong>
