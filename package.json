@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/react-dom": "^19.2.3",
     "@vercel/analytics": "^2.0.1",
-    "geist": "1.7.0",
+    "geist": "1.7.2",
     "next": "16.2.6",
     "next-mdx-remote": "^6.0.0",
     "react": "^19.2.4",
