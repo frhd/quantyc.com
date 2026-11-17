@@ -1,0 +1,5 @@
+# Coolify's nixpacks pins a nixpkgs snapshot whose nodejs_22 is 22.11.0, which
+# cannot require() ES modules; @tailwindcss/node needs that (Node >= 22.12).
+# Pin a newer snapshot (nixos-25.05) so nodejs_22 is recent enough.
+[phases.setup]
+nixpkgsArchive = "ac62194c3917d5f474c1a844b6fd6da2db95077d"
