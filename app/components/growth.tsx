@@ -1,9 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 // A structure that grows from one red square into a tangle of lines and nodes,
 // holds, fades, and starts over with a different layout each time.
+// Rendered once in the root layout, so it keeps going across page navigations.
 
 const COLS = 9
 const ROWS = 14
@@ -76,7 +78,9 @@ function plan(): Step[] {
   return steps
 }
 
-export function Growth({ className = '' }: { className?: string }) {
+export function Growth() {
+  // The blog uses the full width, so there is no free margin to sit in.
+  const onBlog = usePathname().startsWith('/blog')
   const [steps, setSteps] = useState<Step[]>([])
   const [count, setCount] = useState(0)
   const [fading, setFading] = useState(false)
@@ -128,7 +132,7 @@ export function Growth({ className = '' }: { className?: string }) {
       height={height}
       viewBox={`0 0 ${width} ${height}`}
       shapeRendering="crispEdges"
-      className={`shrink-0 text-neutral-400 dark:text-neutral-500 ${className}`}
+      className={`absolute left-[464px] top-[9px] hidden text-neutral-400 dark:text-neutral-500 ${onBlog ? '' : 'md:block'}`}
       style={{ opacity: fading ? 0 : 1, transition: `opacity ${FADE}ms ease-in-out` }}
     >
       <g stroke="currentColor" fill="none">

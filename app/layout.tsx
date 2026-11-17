@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import Footer from './components/footer'
+import { Growth } from './components/growth'
 import { baseUrl } from './sitemap'
 import { GeistMono } from 'geist/font/mono'
 
@@ -61,7 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       />
       <body className={`${GeistMono.className} bg-white text-black dark:bg-[#1c1c1c] dark:text-neutral-300 antialiased max-w-3xl mx-auto p-4 md:p-6 lg:p-8`}>
         <main className="min-h-screen flex flex-col py-8 pt-16 md:py-12 md:pt-24 lg:py-16 lg:pt-32">
-          {children}
+          <div className="relative">
+            {children}
+            <Growth />
+          </div>
           <Footer />
           <Analytics />
         </main>
