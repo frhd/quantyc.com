@@ -1,12 +1,25 @@
 @import "tailwindcss";
 @reference "tailwindcss";
 
+/* dark: applies with the system setting, or when data-theme pins it. */
+@custom-variant dark {
+  &:where([data-theme='dark'], [data-theme='dark'] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme='light']), :root:not([data-theme='light']) *) {
+      @slot;
+    }
+  }
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
 }
 
 :root {
+  color-scheme: light dark;
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -18,15 +31,47 @@
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --sh-class: #2d5e9d;
-    --sh-identifier: #354150;
-    --sh-keyword: #e02518;
-    --sh-string: #007f7a;
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+/* Dark follows the system unless the footer toggle pins a theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --sh-class: #79a8e6;
+    --sh-identifier: #d4d4d4;
+    --sh-sign: #8b949e;
+    --sh-string: #4fc2b9;
+    --sh-keyword: #ff6b5e;
+    --sh-comment: #7d7474;
+    --sh-jsxliterals: #9a9cf0;
+    --sh-property: #f0884f;
+    --sh-entity: #f0884f;
   }
-  html {
-    color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --sh-class: #79a8e6;
+  --sh-identifier: #d4d4d4;
+  --sh-sign: #8b949e;
+  --sh-string: #4fc2b9;
+  --sh-keyword: #ff6b5e;
+  --sh-comment: #7d7474;
+  --sh-jsxliterals: #9a9cf0;
+  --sh-property: #f0884f;
+  --sh-entity: #f0884f;
+}
+
+@layer base {
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Thin, slightly lowered underline wherever a link shows one. */
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
   }
 }
 
@@ -54,11 +99,11 @@ html {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300;
+  @apply text-neutral-300 dark:text-neutral-700;
   content: '#';
 }
 
@@ -67,7 +112,7 @@ html {
 }
 
 .prose pre {
-  @apply bg-neutral-50 rounded-lg overflow-x-auto border border-neutral-200 py-2 px-3 text-sm;
+  @apply bg-neutral-50 dark:bg-neutral-800 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-700 py-2 px-3 text-sm;
 }
 
 .prose code {
@@ -90,7 +135,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800;
+  @apply my-4 text-neutral-800 dark:text-neutral-300;
 }
 
 .prose h1 {
