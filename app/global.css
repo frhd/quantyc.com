@@ -79,6 +79,19 @@ html {
   min-width: 360px;
 }
 
+/* Home page figure (components/growth.tsx): lines draw in, nodes fade in. */
+@keyframes growth-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes growth-appear {
+  from {
+    opacity: 0;
+  }
+}
+
 /* Optimize font loading to prevent layout shifts */
 @font-face {
   font-display: swap;
