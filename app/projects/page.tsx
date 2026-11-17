@@ -38,6 +38,48 @@ export default function ProjectsPage() {
         </p>
       </div>
 
+      {/* Project: anewra.shop */}
+      <div className="mb-8">
+        <h2 className="text-xl font-bold mb-2">
+          <a href="https://anewra.shop/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            anewra.shop
+          </a>
+        </h2>
+        <p className="mb-2">
+          <strong>Jewelry E-commerce Store</strong>
+        </p>
+        <div className="mb-2">
+          <Tag color="bg-zinc-500/20 text-zinc-800">Next.js</Tag>
+          <Tag color="bg-purple-500/20 text-purple-800">Medusa.js</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">Payload CMS</Tag>
+          <Tag color="bg-sky-500/20 text-sky-800">Three.js</Tag>
+        </div>
+        <p>
+          A live online jewelry shop built on a Medusa.js commerce backend with a Next.js storefront, an embedded Payload CMS for content, and interactive 3D product views with Three.js.
+        </p>
+      </div>
+
+      {/* Project: frl-liesel.de */}
+      <div className="mb-8">
+        <h2 className="text-xl font-bold mb-2">
+          <a href="https://frl-liesel.de/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            Fräulein Liesel
+          </a>
+        </h2>
+        <p className="mb-2">
+          <strong>Wine Brand Website</strong>
+        </p>
+        <div className="mb-2">
+          <Tag color="bg-orange-500/20 text-orange-800">Astro</Tag>
+          <Tag color="bg-blue-500/20 text-blue-800">Payload CMS</Tag>
+          <Tag color="bg-cyan-500/20 text-cyan-800">TypeScript</Tag>
+          <Tag color="bg-yellow-500/20 text-yellow-800">PostgreSQL</Tag>
+        </div>
+        <p>
+          A bilingual (German/English) brand site for a wine label with a retro pop-collage design. Static Astro build, rebuilt automatically when the founders publish wines and page content in a self-service CMS.
+        </p>
+      </div>
+
       {/* Project 1 */}
       <div className="mb-8">
         <h2 className="text-xl font-bold mb-2">
