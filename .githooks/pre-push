@@ -1,0 +1,40 @@
+#!/bin/sh
+# Deploy to Coolify after main is pushed. Git has no post-push hook, so this
+# waits in the background until GitHub has the new commit, then triggers the
+# deploy. Needs f001 reachable (LAN or tailnet). Skip with NO_DEPLOY=1.
+
+[ -n "$NO_DEPLOY" ] && exit 0
+
+APP=f444gkwk408cow4kwogwkook
+ENV_FILE="$HOME/src/local/dashboard/.env"
+LOG="$(git rev-parse --git-dir)/deploy.log"
+
+remote="$1"
+sha=""
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ "$remote_ref" = "refs/heads/main" ] && sha="$local_sha"
+done
+case "$sha" in "" | 0000000000000000000000000000000000000000) exit 0 ;; esac
+
+token=$(grep '^NEXT_PUBLIC_COOLIFY_TOKEN=' "$ENV_FILE" 2>/dev/null | cut -d= -f2- | tr -d '"')
+if [ -z "$token" ]; then
+  echo "deploy: no coolify token in $ENV_FILE, skipping" >&2
+  exit 0
+fi
+
+(
+  for _ in $(seq 1 60); do
+    if [ "$(git ls-remote "$remote" refs/heads/main | cut -f1)" = "$sha" ]; then
+      echo "$(date '+%F %T') deploy $sha"
+      curl -s -m 15 -X POST -H "Authorization: Bearer $token" \
+        "http://f001:8000/api/v1/deploy?uuid=$APP"
+      echo
+      exit 0
+    fi
+    sleep 2
+  done
+  echo "$(date '+%F %T') gave up waiting for $sha on $remote"
+) >>"$LOG" 2>&1 &
+
+echo "deploy: queued for ${sha%"${sha#???????}"} once the push lands (log: $LOG)" >&2
+exit 0
