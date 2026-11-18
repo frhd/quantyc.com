@@ -8,10 +8,10 @@ import { usePathname } from 'next/navigation'
 // Rendered once in the root layout, so it keeps going across page navigations.
 
 const COLS = 9
-const ROWS = 14
+const ROWS = 28
 const PITCH = 20 // the mark is 20px; the grid shares its measure
 const PAD = 6
-const MAX_STEPS = 42
+const MAX_STEPS = 84
 const MS_PER_CELL = 150
 const HOLD = 7000
 const FADE = 1400
